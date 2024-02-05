@@ -1,0 +1,5 @@
+ALTER TABLE Albums
+ADD COLUMN band_id INT;
+
+ALTER TABLE Albums
+ADD CONSTRAINT fk_bands_id FOREIGN KEY (band_id) REFERENCES Bands(id);
